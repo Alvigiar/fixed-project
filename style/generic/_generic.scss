@@ -18,7 +18,7 @@ a {
 .about {
   display: grid;
   gap: 32px;
-  
+
   &__title {
     margin-top: 75px - 24px;
   }
@@ -26,7 +26,7 @@ a {
   }
   &__learn-more {
   }
-  &__image{
+  &__image {
     width: 100%;
     height: 250px;
     margin-bottom: 56px;
@@ -34,5 +34,38 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
   }
-  object-fit: ;
+}
+
+.services {
+  display: grid;
+  gap: 24px;
+  padding: 24px 27px 32px 32px;
+  margin-bottom: 64px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+
+  &__cell{
+    display: grid;
+    gap: 15px;
+  }
+}
+
+.who-work{
+  display: grid;
+  gap: 10px;
+
+  &__title{
+    margin-bottom: 32px - 10px;
+  }
+  &__cell{
+    // display: flex;
+    // gap: 16px;
+    padding: 24px 33px 32px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.cell-content{
+  display: flex;
 }
