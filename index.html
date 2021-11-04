@@ -5,165 +5,55 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PDV Project</title>
+  <title>Fixed Project</title>
 </head>
 
 <body>
 
-  <main class="wrapper">
+  <div class="wrapper">
+    <input type="button" value="Open Entrance" id="open-entrance" class="modal-open">
+    <input type="button" value="Open Register" id="open-register" class="modal-open">
+  </div>
 
-    <section class="about">
-      <h2 class="about__title">Поставщик Дальнего Востока</h2>
-      <span class="about__text">Наши клиенты получают полный спектр услуг по работе с Китаем. Начиная с подбора
-        производителя заканчивая доставкой товара до двери.</span>
-      <a href="#" class="about__learn-more">Узнать больше</a>
-      <div class="about__image"></div>
-    </section>
+  <div id="modal-entrance" class="modal">
+    <div class="modal-container wrapper">
+      <input type="button" value="Close Modal" class="modal-close">
+      <div class="modal-box">
 
-    <section class="services">
-      <div class="services__cell">
-        <img src="/img/icon_1.png" alt="" class="services__img">
-        <h3 class="services__title">Поиск производителей по товару</h3>
-        <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
-      </div>
-      <div class="services__cell">
-        <img src="/img/icon_2.png" alt="" class="services__img">
-        <h3 class="services__title">Поиск конкретного производителя</h3>
-        <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
-      </div>
-      <div class="services__cell">
-        <img src="/img/icon_3.png" alt="" class="services__img">
-        <h3 class="services__title">Доставка образцов товаров</h3>
-        <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
-      </div>
-    </section>
 
-    <section class="who-work">
-      <h2 class="who-work__title">В какой сфере вы работаете?</h2>
-      <div class="who-work__cell">
-        <input type="radio" name="work" id="worker" class="who-work__radiobutton radbtn">
-        <label for="worker" class="who-work__cell-content cell-content">
-          <h3 class="cell-content__subtitle">Я работаю на произвостве</h3>
-          <span class="cell-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor
-            incididunt ut labore et dolore magna aliqua.</span>
-        </label>
-      </div>
-      <div class="who-work__cell">
-        <input type="radio" name="work" id="assistant" class="who-work__radiobutton radbtn">
-        <label for="work">
-          <label for="assistant" class="who-work__cell-content cell-content">
-            <h3 class="cell-content__subtitle">Я поставляю товары</h3>
-            <span class="cell-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor
-              incididunt ut labore et dolore magna aliqua.</span>
-          </label>
-        </label>
-      </div>
-      <div class="who-work__cell">
-        <input type="radio" name="work" id="supplier" class="who-work__radiobutton radbtn">
-        <label for="supplier" class="who-work__cell-content cell-content">
-          <h3 class="cell-content__subtitle">Я помогаю подобрать оборудование</h3>
-          <span class="cell-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor
-            incididunt ut labore et dolore magna aliqua.</span>
-        </label>
-      </div>
-    </section>
-
-    <section class="why-us">
-      <h2 class="why-us__title">Почему с нами выгоднее?</h2>
-      <div class="why-us__content">
-        <div class="why-us__content-answer content-answer">
-          <img src="/img/why-us_icon1.png" alt="" class="why-us__img">
-          <div class="content-answer__cell">
-            <h3 class="content-answer__subtitle">Lorem ipsum dolor sit amet</h3>
-            <span class="content-answer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</span>
-          </div>
+        <span class="modal-box__title">Вход</span>
+        <div class="modal-box__content modal-content">
+          <input class="modal-content__login" type="tel" name="login" id="loginInput" placeholder="Телефон">
+          <input class="modal-content__pass" type="password" name="pass" id="password" placeholder="Пароль">
+          <a class="modal-content__remind-pass" href="/">Напомнить пароль</a>
         </div>
-        <div class="why-us__content-answer content-answer">
-          <img src="/img/why-us_icon2.png" alt="" class="why-us__img">
-          <div class="content-answer__cell">
-            <h3 class="content-answer__subtitle">Lorem ipsum dolor sit amet</h3>
-            <span class="content-answer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</span>
-          </div>
-        </div>
-        <div class="why-us__content-answer content-answer">
-          <img src="/img/why-us_icon3.png" alt="" class="why-us__img">
-          <div class="content-answer__cell">
-            <h3 class="content-answer__subtitle">Lorem ipsum dolor sit amet</h3>
-            <span class="content-answer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</span>
-          </div>
-        </div>
-        <div class="why-us__content-answer content-answer">
-          <img src="/img/why-us_icon4.png" alt="" class="why-us__img">
-          <div class="content-answer__cell">
-            <h3 class="content-answer__subtitle">Lorem ipsum dolor sit amet</h3>
-            <span class="content-answer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</span>
-          </div>
+        <button class="modal-box__btn-enter" value="Войти">Войти</button>
 
-        </div>
+
       </div>
-    </section>
+    </div>
+  </div>
 
-    <section class="our-works">
-      <h2 class="our-works__title">Выполненные работы</h2>
-      <span class="our-works__text">Мы собрали информацию по грузам, которые мы уже доставили. У нас специальный
-        подход к каждому виду товаров.</span>
-      <label for="list" class="our-works__works-list works-list">
-        <img src="/img/cargo-works.png" alt="" class="works-list__img">
-        <div class="works-list__work-cell work-cell">
-          <h3 class="work-cell__subtitle">Станки и оборудование</h3>
-          <span class="work-cell__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</span>
+  <div id="modal-register" class="modal">
+    <div class="modal-container wrapper">
+      <input type="button" value="Close Modal" class="modal-close">
+      <div class="modal-box">
+
+
+        <span class="modal-box__title">Регистрация</span>
+        <div class="modal-box__content modal-content">
+          <input type="tel" name="login" id="loginReg" placeholder="Телефон">
+          <input type="email" name="email" id="emailReg" placeholder="Электронная почта">
+          <input type="password" name="pass" id="pass" placeholder="Пароль" />
+          <input type="password" name="doublee-pass" id="double-pass" placeholder="Повторите пароль" />
         </div>
-        <div class="works-list__price-cell works-price">
-          <span class="works-price__cost">20 000 руб.</span>
-          <hr class="works-price__line">
-        </div>
-      </label>
-      <input type="radio" name="list" id="list"> 
+        <button class="modal-box__btn-enter" value="Войти">Войти</button>
 
-      <!-- Сделать слайдер на JS -->
 
-    </section>
-
-    <section class="clients">
-      <h2 class="clients__title">Привлеченные клиенты</h2>
-
-      <!-- Слайдер на JS -->
-
-      <div class="clients__cell clients-cell">
-        <img src="/img/pdv-logo.png" alt="" class="clients-cell__logo">
-        <div class="clients-cell__client-box client-box">
-          <div class="client-box__client-cell client-cell">
-            <span class="client-cell__title">Клиент №1</span>
-          </div>
-          <div class="client-box__product client-product">
-            <img src="/img/product.png" alt="" class="client-product__img">
-            <span class="client-product__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</span>
-            <span class="client-product__cost">120 000 руб.</span>
-          </div>
-          <hr class="client-box__line">
-          <div class="client-box__address client-addres">
-            <span class="client-address__title">Завод “Hlobalkhim”</span>
-            <span class="client-address__text">г. Москва, проспект Кутузовский, д. 12 стр. 1 этаж, пом. 1</span>
-            <div class="client-address__rating">Звездный рейтинг</div>
-            <!-- Сделать звездный рейтинг -->
-          </div>
-          <hr class="client-box__line">
-          <div class="client-box__contact client-contact">
-            <h3 class="client-contact__title">Коваль Иван Борисович</h3>
-            <span class="client-contact__job-text">Руководитель отдела поставок</span>
-            <span class="client-contact__tel">+ 7 (495) 765 33 22</span>
-          </div>
-        </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-
-  </main>
-
-  <div id="app"></div>
   <script type="module" src="/main.js"></script>
 </body>
 
