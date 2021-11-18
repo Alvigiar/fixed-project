@@ -1,15 +1,15 @@
 @import "/node_modules/normalizecss/normalize.css";
 
-.wrapper{
+.wrapper {
   margin: 0px 10px;
 }
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .wrapper {
     margin: 0px 100px;
   }
 }
 @media (min-width: 1200px) {
-  .wrapper{
+  .wrapper {
     margin: 0px 200px;
   }
 }
@@ -26,18 +26,61 @@
   transition: 0.5s;
   justify-items: center;
   align-items: center;
-  background-color: grey;
+  background: rgb(2, 0, 36, 0.5);
 
   &-close {
     justify-self: end;
     align-self: center;
   }
-  
+
   &-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    background-color: white;
+  }
+
+  &-box {
     display: grid;
-    width: 500px;
-    height: 500px;
-    background-color: darkslategrey;
+    align-items: center;
+
+    &__title {
+      justify-self: center;
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 32px;
+      color: blue;
+    }
+
+    &__cell {
+      display: grid;
+      margin: 105px 70px 0px 70px;
+      align-items: center;
+      gap: 32px;
+    }
+
+    &__cell.entr {
+      margin-bottom: 140px;
+    }
+
+    &__cell.regist {
+      margin-bottom: 63px;
+    }
+  }
+
+  &-content {
+    display: grid;
+    gap: 10px 0px;
+
+    &__remind-pass {
+      justify-self: end;
+      font-size: 12px;
+      line-height: 16px;
+      text-decoration: none;
+      color: blue;
+    }
   }
 }
 
@@ -49,4 +92,53 @@
 .modal--show {
   display: grid;
   opacity: 1;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  background: #f7f7fd;
+  padding: 8px 0px 8px 20px;
+  border: 0;
+  border-radius: 4px;
+}
+
+button[value="Войти"] {
+  padding: 12px 145px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border: 0;
+  border-radius: 6px;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: blue;
+  color: white;
+}
+
+.modal {
+  &__btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+
+  &__btn-close::before,
+  &__btn-close::after {
+    content: "";
+    right: 15px;
+    position: absolute;
+    height: 33px;
+    width: 3px;
+    background-color: blue;
+  }
+
+  &__btn-close::before {
+    transform: rotate(45deg);
+  }
+
+  &__btn-close::after {
+    transform: rotate(-45deg);
+  }
 }

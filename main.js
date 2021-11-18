@@ -1,7 +1,7 @@
 import './main.scss'
 
 document.addEventListener('DOMContentLoaded', () => {
-  
+
   const btnOpenModalEntrance = document.querySelector('#open-entrance')
   const btnOpenModalRegister = document.querySelector('#open-register')
 
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalOpen = new Modal(modalEntrance)
     modalOpen.open()
   })
-  
+
   btnOpenModalRegister.addEventListener('click', () => {
     const modalRegister = document.querySelector('#modal-register')
     const modalOpen = new Modal(modalRegister)
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 class Modal {
   constructor(modalBox) {
     this.modal = modalBox
-    this.btnClose = modalBox.querySelector('.modal-close')
+    this.btnClose = modalBox.querySelector('.modal__btn-close')
 
     this.btnClose.addEventListener('click', () => {
       this.close()
